@@ -3,7 +3,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # turn off autocorrect; it's annoying and not really that helpful
-unsetopt correct_all
+unsetopt correct
 
 # disable flow control (to allow Ctrl-s & Ctrl-q)
 stty -ixon -ixoff
@@ -28,7 +28,7 @@ export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-chruby 2.0.0-p247
+source "${ZDOTDIR:-$HOME}/.zprofile"
 
 bindkey -v
 autoload -U edit-command-line
@@ -36,3 +36,7 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 bindkey '^R' history-incremental-search-backward
 bindkey '^R' history-incremental-pattern-search-backward
+
+if [[ -s "${ZDOTDIR:-$HOME}/.goodsearch_env" ]]; then
+  source "${ZDOTDIR:-$HOME}/.goodsearch_env"
+fi
