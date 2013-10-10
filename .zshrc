@@ -19,7 +19,9 @@ alias miv="vim"
 alias mvi="vim"
 alias vmi="vim"
 
-alias catc="pygmentize -g"
+alias zs="zeus start"
+
+alias kitten="pygmentize -g"
 
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin
 export PATH=$PATH:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin
