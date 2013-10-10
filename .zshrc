@@ -30,7 +30,7 @@ export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 
 source "${ZDOTDIR:-$HOME}/.zprofile"
 
-bindkey -v
+bindkey -e
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
