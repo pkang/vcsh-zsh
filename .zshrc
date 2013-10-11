@@ -28,7 +28,8 @@ export PATH=$PATH:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:/usr/local/share/python/
 export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+[[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
 
 source "${ZDOTDIR:-$HOME}/.zprofile"
 
