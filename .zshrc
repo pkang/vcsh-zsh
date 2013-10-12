@@ -11,24 +11,12 @@ stty -ixon -ixoff
 # make tmux look nicer
 alias tmux="TERM=screen-256color-bce tmux"
 
-# I HATE MISSPELLING VIM ARGGGHGHGHG!!!!
-alias vi="vim"
-alias ivm="vim"
-alias imv="vim"
-alias miv="vim"
-alias mvi="vim"
-alias vmi="vim"
-
 alias zs="zeus start"
 
 alias kitten="pygmentize -g"
 
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin
-export PATH=$PATH:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=$PATH:/usr/local/share/python/
-export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
+export PATH=/usr/local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 
-#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
 
 source "${ZDOTDIR:-$HOME}/.zprofile"
