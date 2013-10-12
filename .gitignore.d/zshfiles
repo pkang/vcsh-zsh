@@ -1,0 +1,5 @@
+*
+!.gitignore.d
+!.gitignore.d/zshfiles
+!.zshrc
+!.zshprofile
