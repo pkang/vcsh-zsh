@@ -8,8 +8,7 @@ unsetopt correct
 # disable flow control (to allow Ctrl-s & Ctrl-q)
 stty -ixon -ixoff
 
-# make tmux look nicer
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=xterm-256color tmux"
 
 alias zs="zeus start"
 
@@ -31,3 +30,5 @@ bindkey '^R' history-incremental-pattern-search-backward
 if [[ -s "${ZDOTDIR:-$HOME}/.goodsearch_env" ]]; then
   source "${ZDOTDIR:-$HOME}/.goodsearch_env"
 fi
+
+[ "$SHELL" != /usr/local/bin/zsh ] && SHELL=/usr/local/bin/zsh
